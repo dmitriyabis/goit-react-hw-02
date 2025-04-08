@@ -1,6 +1,6 @@
 import React from "react";
 
-const Feadback = ({ vote, total, positivePercentage }) => {
+const Feadback = ({ vote, total, positive }) => {
   return (
     <div>
       <ul>
@@ -8,7 +8,7 @@ const Feadback = ({ vote, total, positivePercentage }) => {
         <li>neutral:{vote.neutral}</li>
         <li>bad:{vote.bad}</li>
         <li>Total:{total}</li>
-        <li>Positive:{positivePercentage}%</li>
+        <li>Positive:{positive}%</li>
       </ul>
     </div>
   );
