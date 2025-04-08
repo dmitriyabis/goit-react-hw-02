@@ -1,7 +1,6 @@
 import React from "react";
 
-const Feadback = ({ vote, total }) => {
-  const positivePercentage = total ? Math.round((vote.good / total) * 100) : 0;
+const Feadback = ({ vote, total, positivePercentage }) => {
   return (
     <div>
       <ul>
